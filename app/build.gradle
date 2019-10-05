@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'wmpscc'
+            storeFile file('/home/heolis/文档/app_key/roadv1.jks')
+            storePassword 'wmpscc'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "net.ishero.road"
@@ -33,4 +41,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.chen.wakehao.library:bottom-navigation-bar:1.0.0'
+    implementation files('libs/AMap3DMap_6.9.4_AMapNavi_6.9.1_AMapSearch_6.9.2_AMapLocation_4.7.0_20190831.jar')
 }
