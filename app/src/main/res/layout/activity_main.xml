@@ -6,5 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <com.wakehao.bar.BottomNavigationBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        app:fragmentContainerId="@id/fragment_container"
+        app:menu="@menu/bottom_menu"
+        app:selectedColor="@color/green"
+        app:switchMode="shift"
+        app:unSelectedColor="#999999"></com.wakehao.bar.BottomNavigationBar>
+
 
 </com.zhy.autolayout.AutoRelativeLayout>
