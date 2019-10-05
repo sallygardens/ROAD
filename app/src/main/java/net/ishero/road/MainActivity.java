@@ -4,9 +4,11 @@ import android.Manifest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.zhy.autolayout.AutoLayoutActivity;
+
 import net.ishero.road.utils.Permission;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AutoLayoutActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
