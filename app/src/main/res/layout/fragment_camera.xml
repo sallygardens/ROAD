@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.CameraFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.zhy.autolayout.AutoRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_background">
+
+        <Spinner
+            android:id="@+id/top_spiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/spingarr" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/alr_1"
+            android:layout_width="wrap_content"
+            android:layout_height="81px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/top_spiner"
+            android:background="@drawable/editor_top_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="54px"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/ed_top_search"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/hint_editor_top" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_map"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_map" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ib_map"
+            android:layout_alignLeft="@id/ib_map"
+            android:layout_marginLeft="3dp"
+            android:text="地图"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="@color/base_dark"
+        fab:menu_colorPressed="@color/press_dark"
+        fab:menu_colorRipple="@color/press_dark"
+        fab:menu_fab_label="菜单"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
 
-</FrameLayout>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_start_record"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="开始录制"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_stop_record"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="停止录制"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_save_local"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="上传图片"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
