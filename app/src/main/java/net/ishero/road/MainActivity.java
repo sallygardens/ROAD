@@ -17,9 +17,12 @@ public class MainActivity extends AutoLayoutActivity {
         requestPermission();
     }
 
-    private void requestPermission(){
+    private void requestPermission() {
         Permission.requestPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         Permission.requestPermission(this, Manifest.permission.CAMERA);
+        Permission.requestPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
+        Permission.requestPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
+
     }
 
 }
