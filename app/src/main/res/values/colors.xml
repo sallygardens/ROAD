@@ -4,4 +4,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="green">#5ea116</color>
+    <color name="white">#ffffff</color>
+    <color name="white_pressed">#c4c4c4</color>
+    <color name="top_background">#f2f2f2</color>
+    <color name="base_dark">#252b2c</color>
+    <color name="press_dark">#252929</color>
+    <color name="text_dark">#363a3b</color>
+
 </resources>

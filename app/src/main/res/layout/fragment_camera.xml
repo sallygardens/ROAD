@@ -25,6 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="81px"
             android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/top_spiner"
             android:layout_toRightOf="@+id/top_spiner"
             android:background="@drawable/editor_top_background"
             android:gravity="center_vertical"

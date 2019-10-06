@@ -46,7 +46,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CrackMapActivity"></activity>
+        <activity android:name=".activity.CrackMapActivity" />
+        <activity
+            android:name=".activity.CrackDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

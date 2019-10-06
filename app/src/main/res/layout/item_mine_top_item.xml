@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/re_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_background_mine" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="128dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_seim_circle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_touxiang"
+            app:civ_border_color="#6f7879"
+            app:civ_border_width="5dp" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="你的名字"
+            android:textColor="#000000"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_width="32px"
+            android:layout_height="55px"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="120px"
+            android:layout_marginTop="40px"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_level_mine" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_level"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_level"
+            android:text="职位:群众"
+            android:textColor="#8b8e8f" />
+
+        <ImageView
+            android:id="@+id/iv_ID"
+            android:layout_width="65px"
+            android:layout_height="54px"
+            android:layout_alignBottom="@+id/iv_level"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/tv_level"
+            android:src="@drawable/ic_id" />
+
+        <TextView
+            android:id="@+id/tv_ID_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_ID"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_ID"
+            android:text="ID:987654321"
+            android:textColor="#8b8e8f" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_below="@+id/tv_ID_number"
+            android:layout_margin="20dp"
+            android:background="#8b8e8f" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/re_2">
+
+        <RelativeLayout
+            android:id="@+id/re_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tv_time_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30分钟"
+                android:textColor="#252b2c"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_time_long"
+                android:layout_centerHorizontal="true"
+                android:text="时长"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/re_5"
+            android:background="#868a8b" />
+
+        <RelativeLayout
+            android:id="@+id/re_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tv_dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10公里"
+                android:textColor="#252b2c"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dist"
+                android:layout_centerHorizontal="true"
+                android:text="路程"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/re_6"
+            android:background="#868a8b" />
+
+        <RelativeLayout
+            android:id="@+id/re_6"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10公里"
+                android:textColor="#252b2c"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_count"
+                android:layout_centerHorizontal="true"
+                android:text="发布数量"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

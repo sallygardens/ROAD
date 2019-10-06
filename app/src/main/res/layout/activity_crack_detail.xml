@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CrackDetailActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/lr_3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <cn.jzvd.JzvdStd
+            android:id="@+id/jz_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/detail_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lr_3">
+
+    </com.amap.api.maps.MapView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="@color/base_dark"
+        fab:menu_colorPressed="@color/press_dark"
+        fab:menu_colorRipple="@color/press_dark"
+        fab:menu_fab_label="菜单"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_info"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="上传者信息"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_level"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="状态更改"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pic"
+            fab:fab_colorNormal="@color/base_dark"
+            fab:fab_colorPressed="@color/press_dark"
+            fab:fab_label="裂缝图片"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+    <ImageButton
+        android:layout_margin="10dp"
+        android:id="@+id/ib_back_map2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back_button" />
+
+</RelativeLayout>
